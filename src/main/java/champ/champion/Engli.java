@@ -1,5 +1,7 @@
 package champ.champion;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -32,6 +34,7 @@ public class Engli{
 
       @OneToOne(cascade = CascadeType.ALL)
       @JoinColumn(name = "authorId")
+      @JsonManagedReference
       private Author author;
 
 }
