@@ -76,6 +76,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>champs</finalName>
 	</build>
-
+	
 </project>
